@@ -9,7 +9,7 @@ require('dotenv').config();
 
 const port = process.env.PORT || 4005;
 
-app.use(express.static('public/build'))
+// app.use(express.static('public/build'))
 app.use(express.json());
 
 const url = process.env.MONGODB_URI;
