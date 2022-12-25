@@ -10,7 +10,9 @@ const app = express();
 //     credentials:true,            //access-control-allow-credentials:true
 //     optionSuccessStatus:200,
 //  }
-app.use(cors());
+app.use(cors(
+    {origin:'https://notes-client.onrender.com',}
+));
 require("dotenv").config();
 
 const port = process.env.PORT || 4005;
