@@ -4,10 +4,12 @@ import noteRouter from './routes/noteRoute';
 
 const app = express();
 require('dotenv').config();
+const cors = require("cors");
 
-const port = process.env.PORT || 4004;
+const port = process.env.PORT || 4005;
 
 app.use(express.static('public/build'))
+app.use(cors());
 app.use(express.json());
 
 const url = process.env.MONGODB_URI;
