@@ -1,15 +1,15 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import noteRouter from './routes/noteRoute';
+const cors = require("cors");
 
 const app = express();
+app.use(cors());
 require('dotenv').config();
-const cors = require("cors");
 
 const port = process.env.PORT || 4005;
 
 app.use(express.static('public/build'))
-app.use(cors());
 app.use(express.json());
 
 const url = process.env.MONGODB_URI;
