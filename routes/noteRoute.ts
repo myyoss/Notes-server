@@ -5,7 +5,7 @@ import { addNote, getNote, deleteNote } from '../controllers/noteCont'
 
 router
 .post('/addNote',addNote)
-.get('/', getNote)
+.get('/getNote', getNote)
 .post('/deleteNote', deleteNote)
 
 
