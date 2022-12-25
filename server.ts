@@ -11,7 +11,7 @@ const app = express();
 //     optionSuccessStatus:200,
 //  }
 app.use(cors(
-    {origin:'https://notes-client.onrender.com',}
+    {origin:'*',}
 ));
 require("dotenv").config();
 
