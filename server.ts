@@ -1,11 +1,15 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import noteRouter from './routes/noteRoute';
-import cors from "cors";
+const cors = require("cors");
 
 const app = express();
-
-app.use(cors());
+const corsOptions ={
+    origin:'*', 
+    credentials:true,            //access-control-allow-credentials:true
+    optionSuccessStatus:200,
+ }
+app.use(cors(corsOptions));
 require('dotenv').config();
 
 const port = process.env.PORT || 4005;
