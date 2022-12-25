@@ -1,0 +1,1 @@
+{"version":3,"file":"noteModel.js","sourceRoot":"","sources":["../../models/noteModel.ts"],"names":[],"mappings":";;;;;AAAA,wDAAgC;AAGhC,MAAM,UAAU,GAAG,IAAI,kBAAQ,CAAC,MAAM,CAAC;IACrC,KAAK,EAAC,MAAM;IACZ,OAAO,EAAC,MAAM;IACd,QAAQ,EAAC,MAAM;CAEhB,CAAC,CAAC;AAEH,MAAM,SAAS,GAAG,kBAAQ,CAAC,KAAK,CAAC,OAAO,EAAE,UAAU,CAAC,CAAC;AACtD,kBAAe,SAAS,CAAC"}
